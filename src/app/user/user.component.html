@@ -22,15 +22,20 @@
         <th>2º Apellido</th>
         <th>Email</th>
         <th>Telefono</th>
+        <th>Acción</th>
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let item of user">
+      <tr *ngFor="let item of users">
         <td>{{item.nombre}}</td>
         <td>{{item.apellido}}</td>
         <td>{{item.apellido2}}</td>
         <td>{{item.email}}</td>
         <td>{{item.telefono}}</td>
+        <td>
+            <img class="icon-update" src="../../assets/img/icon/edit_user.png" (click)="edit(item)"/>
+            <img class="icon-delete" src="../../assets/img/icon/delete_user.png" (click)="delete(item)" />
+        </td>
       </tr>
     </tbody>
   </table>

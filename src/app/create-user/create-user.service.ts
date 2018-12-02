@@ -29,6 +29,6 @@ export class CreateUserService {
   }
 
   public saveOrUpdate(usuario: Array<UserModel>): Observable<Object> {
-    return this.http.post('http://localhost:8080/saveOrUpdate', JSON.stringify(usuario).toString());
+    return this.http.post('http://localhost:8080/saveOrUpdate', JSON.stringify(usuario));
   }
 }
