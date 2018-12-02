@@ -1,0 +1,17 @@
+.clear{
+    margin: 15px;
+}
+.button-container{
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 255px;
+    height: 38px;
+}
+.button-entity{
+    margin: 0 auto;
+    margin-left: 5px;
+    float: left;
+    display: block;
+    margin-right: 5px;
+}

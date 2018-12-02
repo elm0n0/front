@@ -1,0 +1,23 @@
+.clear {
+    margin: 15px;
+}
+.required{
+    color: red;
+    font-weight: bolder;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.form-container{
+    margin: 0 auto;
+    width: 450px;
+}
+.col-sm-2{
+    max-width: 100%;
+}
+.title-Form{
+    margin-left: 3%;
+}
+.alert{
+    margin-left: 3%;
+    width: 80%;
+}
