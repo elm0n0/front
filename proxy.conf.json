@@ -1,0 +1,17 @@
+{
+    "/getUser": {
+        "target":"https://my-socialweb-app.herokuapp.com",
+        "secure": false,
+        "changeOrigin": true
+    },
+    "/saveOrUpdate": {
+        "target":"https://my-socialweb-app.herokuapp.com",
+        "secure": false,
+        "changeOrigin": true
+    },
+    "/deleteUser": {
+        "target":"https://my-socialweb-app.herokuapp.com",
+        "secure": false,
+        "changeOrigin": true
+    }
+}

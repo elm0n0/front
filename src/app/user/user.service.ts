@@ -10,18 +10,20 @@ import { UserModel } from './../model/usuarios.model';
 
 export class UserService {
   private usuarios: Array<UserModel>;
+  private service_get = 'getUser';
+  private service_delete = 'deleteUser';
   constructor(private http: HttpClient) {
     this.usuarios = new Array<UserModel>();
   }
 
   public getUser(): Observable<UserModel[]> {
-    return this.http.get<UserModel[]>('http://localhost:8080/getUser');
+    return this.http.get<UserModel[]>(this.service_get);
   }
 
   public delete(): Observable<any> {
     if (sessionStorage.getItem('user')) {
       this.usuarios.push(JSON.parse(sessionStorage.getItem('user')));
-      return this.http.post('http://localhost:8080/deleteUser', JSON.stringify(this.usuarios));
+      return this.http.post(this.service_delete, JSON.stringify(this.usuarios));
     }
   }
 
