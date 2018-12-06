@@ -10,7 +10,7 @@ import { UserModel } from './../model/usuarios.model';
 export class CreateUserService {
 
   constructor(private http: HttpClient) { }
-
+  private service_saveOrUpdate = 'saveOrUpdate';
   /**
    * metodo que valida campos obligatorios.
    */
@@ -29,6 +29,6 @@ export class CreateUserService {
   }
 
   public saveOrUpdate(usuario: Array<UserModel>): Observable<Object> {
-    return this.http.post('http://localhost:8080/saveOrUpdate', JSON.stringify(usuario));
+    return this.http.post(this.service_saveOrUpdate, JSON.stringify(usuario));
   }
 }
