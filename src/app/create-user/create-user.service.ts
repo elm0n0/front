@@ -10,7 +10,7 @@ import { UserModel } from './../model/usuarios.model';
 export class CreateUserService {
 
   constructor(private http: HttpClient) { }
-  private service_saveOrUpdate = 'saveOrUpdate';
+  service_saveOrUpdate = 'saveOrUpdate';
   /**
    * metodo que valida campos obligatorios.
    */
