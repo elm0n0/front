@@ -9,9 +9,9 @@ import { UserModel } from './../model/usuarios.model';
 })
 
 export class UserService {
-  private usuarios: Array<UserModel>;
-  private service_get = 'getUser';
-  private service_delete = 'deleteUser';
+  usuarios: Array<UserModel>;
+  service_get = 'getUser';
+  service_delete = 'deleteUser';
   constructor(private http: HttpClient) {
     this.usuarios = new Array<UserModel>();
   }

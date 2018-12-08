@@ -11,13 +11,13 @@ import { Router } from '@angular/router';
 })
 export class CreateUserComponent implements OnInit {
 
-  private user: UserModel;
+  user: UserModel;
 
-  private usuarios: Array<UserModel>;
+  usuarios: Array<UserModel>;
 
-  private isValid = true;
+  isValid = true;
 
-  private mensaje;
+  mensaje;
 
   constructor(private createUserService: CreateUserService, private router: Router) {
     this.usuarios = new Array<UserModel>();

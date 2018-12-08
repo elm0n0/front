@@ -11,7 +11,7 @@ import { UserService } from './user.service';
   providers: [UserService]
 })
 export class UserComponent implements OnInit {
-  private users: Array<UserModel>;
+  users: Array<UserModel>;
 
   constructor(private userService: UserService, private router: Router) { }
 
