@@ -10,7 +10,7 @@ import { UserModel } from './../model/usuarios.model';
 export class CreateUserService {
 
   constructor(private http: HttpClient) { }
-  service_saveOrUpdate = 'saveOrUpdate';
+  service_saveOrUpdate = 'https://my-socialweb-app.herokuapp.com/saveOrUpdate';
   /**
    * metodo que valida campos obligatorios.
    */
@@ -29,6 +29,6 @@ export class CreateUserService {
   }
 
   public saveOrUpdate(usuario: Array<UserModel>): Observable<Object> {
-    return this.http.post(this.service_saveOrUpdate, JSON.stringify(usuario));
+    return this.http.post('https://cors-elm0n0.herokuapp.com/?q=' + this.service_saveOrUpdate, JSON.stringify(usuario));
   }
 }
