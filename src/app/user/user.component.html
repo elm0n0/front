@@ -10,8 +10,15 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 </head>
 <body>
-
 <div class="container">  
+  <div class="button-container">
+    <div class=button-entity>
+      <button type="button" [routerLink]="['/userComponent']" class="btn btn-primary">Usuarios</button>
+    </div>
+    <div class=button-entity>
+      <button type="button" [routerLink]="['/createUserComponent']" class="btn btn-success">Agregar Usuarios</button>
+    </div>
+  </div>
   <h1>Usuarios Registrados</h1>
   <div class="clear"></div>     
   <table class="table table-striped">

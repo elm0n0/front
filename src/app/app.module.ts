@@ -7,12 +7,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
 import { CreateUserComponent } from './create-user/create-user.component';
+import { LoggerPoliciaComponent } from './logger-policia/logger-policia.component';
+import { InformacionComponent } from './informacion/informacion.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
-    CreateUserComponent
+    CreateUserComponent,
+    LoggerPoliciaComponent,
+    InformacionComponent
   ],
   imports: [
     BrowserModule,

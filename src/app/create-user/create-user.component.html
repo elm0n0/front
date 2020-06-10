@@ -20,6 +20,14 @@
 </head>
 
 <body>
+  <div class="button-container">
+    <div class=button-entity>
+      <button type="button" [routerLink]="['/userComponent']" class="btn btn-primary">Usuarios</button>
+    </div>
+    <div class=button-entity>
+      <button type="button" [routerLink]="['/createUserComponent']" class="btn btn-success">Agregar Usuarios</button>
+    </div>
+  </div>
   <div class="clear"></div>
   <div class="form-container">
     <h2 class="title-Form">Crear Nuevo Usuario</h2>

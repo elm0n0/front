@@ -21,3 +21,22 @@
     margin-left: 3%;
     width: 80%;
 }
+.clear{
+    margin: 15px;
+}
+.button-container{
+    background-color: blue;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 15%;
+    min-width: 280px;
+    height: 38px;
+}
+.button-entity{
+    margin: 0 auto;
+    margin-left: 5px;
+    display: inline-block;
+    white-space:nowrap;
+    margin-right: 5px;
+}
