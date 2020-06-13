@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { LoggerModel } from './../model/logger.model';
 import { LoggerPoliciaService } from './logger-policia.service';
 import { policiaModel } from './../model/policia.model';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-logger-policia',
@@ -11,6 +12,9 @@ import { policiaModel } from './../model/policia.model';
   providers: [LoggerPoliciaService],
 })
 export class LoggerPoliciaComponent implements OnInit {
+
+  @ViewChild(AppComponent) app: AppComponent;
+
   policiaLog: LoggerModel;
 
   policia: policiaModel;
@@ -34,6 +38,7 @@ export class LoggerPoliciaComponent implements OnInit {
         this.router.navigate(['/infomacion']);
       }
     });
+    console.log(this.app)
   }
 
 }
